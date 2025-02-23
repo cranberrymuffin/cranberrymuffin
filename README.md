@@ -6,7 +6,7 @@
 - 🛠 Proficient in a wide range of backend and frontend technologies
 - 🌟 Eager to explore new tools and frameworks
 - ✨ Special interest in exploring play through immersive and interactive web experiences
-- 👩‍💻 Check out some of my projects on my [website](https://www.example.com)
+- 👩‍💻 Check out some of my projects on my [website](https://cranberrymuffin.github.io/)
 - 🚀 Looking for new opportunities to grow as a developer and contribute to exciting, innovative projects
 
 ## Languages and Tools
