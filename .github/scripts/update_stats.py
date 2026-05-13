@@ -3,6 +3,7 @@ import os
 import json
 from collections import defaultdict
 from datetime import datetime
+import re
 import urllib.request
 import urllib.error
 
@@ -126,11 +127,8 @@ def update_readme():
     before = content[:content.index(start_marker) + len(start_marker)]
     after = content[content.index(end_marker):]
     
-    # Update the timestamp in the "after" section
-    after = after.replace(
-        after[after.find('*Last updated:'):after.find('*Last updated:') + 50],
-        f"*Last updated: {timestamp}*"
-    )
+    # Replace the timestamp using regex
+    after = re.sub(r'\*Last updated: \d{4}-\d{2}-\d{2}\*', f'*Last updated: {timestamp}*', after)
     
     new_content = f"{before}\n{stats_section}\n{after}"
     
