@@ -126,7 +126,13 @@ def update_readme():
     before = content[:content.index(start_marker) + len(start_marker)]
     after = content[content.index(end_marker):]
     
-    new_content = f"{before}\n{stats_section}\n{after}\n*Last updated: {timestamp}*\n"
+    # Update the timestamp in the "after" section
+    after = after.replace(
+        after[after.find('*Last updated:'):after.find('*Last updated:') + 50],
+        f"*Last updated: {timestamp}*"
+    )
+    
+    new_content = f"{before}\n{stats_section}\n{after}"
     
     with open(README_PATH, 'w') as f:
         f.write(new_content)
