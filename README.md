@@ -2,11 +2,11 @@
 ## 📊 Languages & Tools
 
 ### Top Languages
-- **JavaScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=javascript) | **17 repos**
-- **HTML** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=html) | **16 repos**
-- **CSS** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=css) | **16 repos**
-- **Swift** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=swift) | **5 repos**
+- **JavaScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=javascript) | **15 repos**
+- **HTML** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=html) | **15 repos**
+- **CSS** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=css) | **15 repos**
 - **TypeScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=typescript) | **3 repos**
+- **Python** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=python) | **2 repos**
 
 ### Frameworks & Libraries
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
@@ -29,4 +29,4 @@
 
 ---
 
-*Last updated: 2026-05-14*
+*Last updated: 2026-05-16*
