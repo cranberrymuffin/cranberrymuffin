@@ -6,7 +6,7 @@
 - **TypeScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=typescript) | **3 repos**
 - **Python** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=python) | **2 repos**
 - **Swift** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=swift) | **2 repos**
-- **Dockerfile** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=dockerfile) | **1 repo**
+- **Ruby** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=ruby) | **1 repo**
 
 ### Frameworks & Libraries
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
