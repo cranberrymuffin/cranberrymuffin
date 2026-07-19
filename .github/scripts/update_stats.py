@@ -22,7 +22,7 @@ FRAMEWORK_PATTERNS = {
 }
 
 # Languages to exclude from the reported top languages
-EXCLUDE_LANGUAGES = {'HTML', 'CSS'}
+EXCLUDE_LANGUAGES = {'HTML', 'CSS', 'Dockerfile'}
 
 TOOL_BADGES = {
     'GitHub': 'GitHub-181717?style=flat&logo=github&logoColor=white',
