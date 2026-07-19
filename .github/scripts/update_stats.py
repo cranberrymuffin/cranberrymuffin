@@ -18,7 +18,11 @@ FRAMEWORK_PATTERNS = {
     'Node.js': ['node.js', 'nodejs', 'node', 'express'],
     'Django': ['django'],
     'Flask': ['flask'],
+    'PeerJS': ['peerjs', 'peer.js', 'peer'],
 }
+
+# Languages to exclude from the reported top languages
+EXCLUDE_LANGUAGES = {'HTML', 'CSS'}
 
 TOOL_BADGES = {
     'GitHub': 'GitHub-181717?style=flat&logo=github&logoColor=white',
@@ -69,6 +73,9 @@ def analyze_repositories():
     for repo in repos:
         languages = get_repo_languages(GITHUB_USER, repo['name'])
         for lang in languages.keys():
+            # Skip excluded languages (HTML/CSS)
+            if lang in EXCLUDE_LANGUAGES:
+                continue
             language_count[lang] += 1
     
     return language_count
@@ -91,6 +98,7 @@ def generate_stats_section():
         'Node.js': 'Node.js-339933?style=flat&logo=nodedotjs&logoColor=white',
         'Django': 'Django-092E20?style=flat&logo=django&logoColor=white',
         'Flask': 'Flask-000000?style=flat&logo=flask&logoColor=white',
+        'PeerJS': 'PeerJS-FF4081?style=flat',
     }
     
     for framework, badge_url in badges.items():
