@@ -6,6 +6,7 @@ from datetime import datetime
 import re
 import urllib.request
 import urllib.error
+import urllib.parse
 
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 GITHUB_USER = 'cranberrymuffin'
@@ -80,15 +81,43 @@ def analyze_repositories():
     
     return language_count
 
+def language_has_repos(language):
+    """Return True if the user's repositories include the given language according to the GitHub Search API.
+    This helps exclude languages where the hyperlink would return an empty result set.
+    """
+    # Encode the query safely
+    query = urllib.parse.quote(f'user:{GITHUB_USER} language:"{language}"')
+    data = make_api_request(f'/search/repositories?q={query}&per_page=1')
+    if not data:
+        return False
+    return data.get('total_count', 0) > 0
+
 def generate_stats_section():
     language_count = analyze_repositories()
-    top_languages = sorted(language_count.items(), key=lambda x: x[1], reverse=True)[:5]
+    # Sort languages by repository count (desc)
+    sorted_langs = sorted(language_count.items(), key=lambda x: x[1], reverse=True)
     
     section = "## 📊 Languages & Tools\n\n"
     section += "### Top Languages\n"
-    for lang, count in top_languages:
+
+    # Add up to 5 languages but skip any where the search/link would return no results
+    added = 0
+    for lang, count in sorted_langs:
+        if added >= 5:
+            break
+        # Skip excluded languages just in case
+        if lang in EXCLUDE_LANGUAGES:
+            continue
+        # Verify that the hyperlink/search returns results; skip if empty
+        if not language_has_repos(lang):
+            continue
+
         lang_param = lang.lower().replace('#', 'sharp').replace('+', 'plus').replace(' ', '-')
         section += f"- **{lang}** - [View Repositories](https://github.com/{GITHUB_USER}?tab=repositories&language={lang_param}) | **{count} repo{'s' if count != 1 else ''}**\n"
+        added += 1
+
+    if added == 0:
+        section += "No top languages detected.\n"
     
     section += "\n### Frameworks & Libraries\n"
     badges = {
