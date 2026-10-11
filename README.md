@@ -3,8 +3,8 @@
 
 ### Top Languages
 - **JavaScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=javascript) | **18 repos**
+- **Python** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=python) | **3 repos**
 - **TypeScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=typescript) | **3 repos**
-- **Python** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=python) | **2 repos**
 - **Swift** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=swift) | **2 repos**
 - **Kotlin** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=kotlin) | **1 repo**
 
@@ -30,4 +30,4 @@
 
 ---
 
-*Last updated: 2026-10-04*
+*Last updated: 2026-10-11*
