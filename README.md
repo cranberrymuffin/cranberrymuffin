@@ -2,7 +2,7 @@
 ## 📊 Languages & Tools
 
 ### Top Languages
-- **JavaScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=javascript) | **18 repos**
+- **JavaScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=javascript) | **20 repos**
 - **Python** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=python) | **3 repos**
 - **TypeScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=typescript) | **3 repos**
 - **Swift** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=swift) | **2 repos**
@@ -30,4 +30,4 @@
 
 ---
 
-*Last updated: 2026-10-18*
+*Last updated: 2026-10-25*
