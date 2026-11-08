@@ -5,7 +5,7 @@
 - **JavaScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=javascript) | **20 repos**
 - **Python** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=python) | **3 repos**
 - **TypeScript** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=typescript) | **3 repos**
-- **Swift** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=swift) | **2 repos**
+- **Swift** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=swift) | **3 repos**
 - **Kotlin** - [View Repositories](https://github.com/cranberrymuffin?tab=repositories&language=kotlin) | **1 repo**
 
 ### Frameworks & Libraries
@@ -30,4 +30,4 @@
 
 ---
 
-*Last updated: 2026-11-01*
+*Last updated: 2026-11-08*
